@@ -1,16 +1,21 @@
 <template>
   <nav>
-    <v-toolbar app>
+    <v-toolbar app extended>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase grey--text">
         {{ pageTitle }}
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn flat color="gray">
-        <span>Search</span>
-        <v-icon right>mdi-magnify</v-icon>
-      </v-btn>
-      
+
+      <v-text-field
+        v-model="search"
+        placeholder="Search..."
+        clearable
+        solo
+        single-line
+        prepend-inner-icon="mdi-magnify"
+      ></v-text-field>
+
       <v-select
         class="select"
         v-model="selectSortBy"
