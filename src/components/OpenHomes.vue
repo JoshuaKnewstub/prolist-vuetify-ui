@@ -27,10 +27,15 @@
       >
         Explore
       </v-btn>
-
       <v-spacer></v-spacer>
-
-      
+        <v-card-text>0</v-card-text>
+        <v-icon>mdi-36px mdi-bed</v-icon>
+      <v-spacer></v-spacer>
+        <v-card-text>0</v-card-text>
+        <v-icon>mdi-36px mdi-shower</v-icon>
+      <v-spacer></v-spacer>
+        <v-card-text>0</v-card-text>
+        <v-icon>mdi-36px mdi-car</v-icon>
     </v-card-actions>
   </v-card>
   </div>
