@@ -1,7 +1,7 @@
 <template>
   <div class="openHomes">
     <h1 class="openHomesHeading">Open Homes</h1>
-    <v-container>
+    <v-container grid-list-md>
       <v-layout row wrap>
         <v-flex xs12 md6 lg4>
           <v-btn outline block class="primary">Test</v-btn>
