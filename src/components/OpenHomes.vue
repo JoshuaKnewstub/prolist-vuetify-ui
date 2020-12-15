@@ -3,10 +3,20 @@
     <h1 class="openHomesHeading ma-10">Open Homes</h1>
     <v-layout row wrap>
       <v-card class="mx-auto ma-2" max-width="344">
-        <v-img
-          height="200px"
-        >Image Placeholder</v-img>
-
+        <v-img height="200px">Image Placeholder</v-img>
+        <v-fab-transition>
+              <v-btn
+                @click="toggleButton"
+                color="white"
+                dark
+                absolute
+                top
+                right
+                fab
+              >
+                <v-icon id="favouriteToggle" color="blue"></v-icon>
+              </v-btn>
+            </v-fab-transition>
         <v-card-title class="address">
           Address of House
         </v-card-title>
@@ -43,11 +53,16 @@
 <script>
   export default {
     name: 'openhomes',
-
     data: () => ({
       show: false,
+      clicked: false,
+      favouriteToggle: 'mdi-36px mdi-star'
     }),
-  }
+    methods: {
+      toggleButton() {
+        this.favouriteToggle = 'mdi-36px mdi-car'
+    },
+  }}
 </script>
 <style scoped>
   .openHomesHeading {
