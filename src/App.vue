@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <v-main>
-      <router-view></router-view>
       <NavBar/>
       <OpenHomes/>
     </v-main>
@@ -11,7 +10,6 @@
 <script>
 import OpenHomes from './components/OpenHomes';
 import NavBar from './components/layout/NavBar'
-
 
 export default {
   name: 'App',
