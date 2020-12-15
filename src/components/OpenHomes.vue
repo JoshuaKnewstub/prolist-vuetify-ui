@@ -43,7 +43,7 @@
 
 <script>
   export default {
-    name: 'OpenHomes',
+    name: 'openhomes',
 
     data: () => ({
       show: false,

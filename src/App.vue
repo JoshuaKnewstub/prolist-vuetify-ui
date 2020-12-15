@@ -3,13 +3,15 @@
     <v-main>
       <NavBar/>
       <OpenHomes/>
+      <Listing/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import OpenHomes from './components/OpenHomes';
-import NavBar from './components/layout/NavBar'
+import OpenHomes from 'C:/Users/PROLIST/Desktop/Prolist Test/prolist-vuetify-ui/src/components/OpenHomes.vue';
+import NavBar from './components/layout/NavBar.vue'
+import Listing from './components/listings/Listing.vue'
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
   components: {
     OpenHomes,
     NavBar,
+    Listing
   },
 
   data: () => ({
