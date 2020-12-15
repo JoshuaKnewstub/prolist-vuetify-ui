@@ -9,12 +9,10 @@
 </template>
 
 <script>
-import listingsJson from "./components/listings/Listings.JSON";
 
 export default {
   data() {
     return {
-      propertyData: listingsJson,
     };
   },
 };

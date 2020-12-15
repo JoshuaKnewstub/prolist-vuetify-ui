@@ -3,15 +3,15 @@
     <v-main>
       <NavBar/>
       <OpenHomes/>
-      <Listings/>
+      <Listing/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import OpenHomes from './components/OpenHomes';
-import NavBar from './components/layout/NavBar'
-import Listings from './components/listings/Listings'
+import OpenHomes from './components/OpenHomes.vue';
+import NavBar from './components/layout/NavBar.vue'
+import Listing from './components/listings/Listing.vue'
 
 export default {
   name: 'App',
@@ -19,7 +19,7 @@ export default {
   components: {
     OpenHomes,
     NavBar,
-    Listings
+    Listing
   },
 
   data: () => ({
