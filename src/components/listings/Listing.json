@@ -1,0 +1,422 @@
+{
+  "Id": "586ce0d9-6585-40ee-9d97-024013f651c3",
+  "PropertyId": 176306,
+  "CreateDate": "2020-12-10T08:33:37.343",
+  "ListingCategory": "House",
+  "PropertyType": "House",
+  "MethodOfSale": "Sale",
+  "Status": "Current",
+  "CommercialCategories": null,
+  "Agents": [
+    {
+      "Id": "54851852-6598-47b7-94fa-a21b2887554c",
+      "FirstName": "Shira",
+      "LastName": "David Stern",
+      "Position": "Your Real Estate Agent",
+      "DisplayPriority": 4,
+      "DisplayType": 0,
+      "OfficePhone": "(07) 4031 3138",
+      "MobilePhone": "0428 807 757",
+      "Email": "shira@tspropertygroup.com.au",
+      "Website": "",
+      "FacebookUrl": "",
+      "LinkedInUrl": "",
+      "TwitterUrl": "",
+      "RateMyAgentUrl": "CRES4870QLD",
+      "AboutAgent": "<p>When it comes to being a real estate professional, there are three things of utmost importance to Shira David Stern, &rsquo;Commitment, Passion and Integrity&rsquo;.<br /><br />Her sales background taught Shira excellent negotiation skills and business acumen, whilst her experience in customer service has taught her the value of satisfying clients&rsquo; needs.<br /><br />Shira specialises in delivering her clients the highest possible results and always providing outstanding customer service with informed, honest advice about their property. She understands that overseeing the sale of a property means handling a pivotal transaction and this is a responsibility that she doesn&rsquo;t take lightly. She thoroughly enjoys the fast paced and challenging environment that real estate provides.<br /><br />She has an innate insight into what people are searching for and she most enjoys meeting potential sellers and buyers while helping them on their way to finding their dream property and at the same time being both helpful and flexible to their needs.<br /><br />Shira has a vast international background having lived and worked in Israel, USA, Singapore and London before choosing beautiful tropical Cairns as her home.<br /><br />Her commitment to her work and her contagious enthusiasm for real estate guarantees Shira will go the extra mile for her clients.</p>",
+      "Photo": {
+        "Thumbs": {
+          "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Agent/Thumbs/26757122-cfeb-47df-8a9a-0e412da9eab3.png"
+        },
+        "Preview": {
+          "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Agent/Preview/26757122-cfeb-47df-8a9a-0e412da9eab3.png"
+        },
+        "Large": {
+          "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Agent/Large/26757122-cfeb-47df-8a9a-0e412da9eab3.png"
+        }
+      },
+      "PROLISTPhoto": {
+        "Thumbs": {
+          "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Agent/Thumbs/c2322d22-1967-42ff-af2f-9416d8e64d3b.png"
+        },
+        "Preview": {
+          "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Agent/Preview/c2322d22-1967-42ff-af2f-9416d8e64d3b.png"
+        },
+        "Large": {
+          "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Agent/Large/c2322d22-1967-42ff-af2f-9416d8e64d3b.png"
+        }
+      },
+      "Office": null,
+      "FullName": "Shira David Stern",
+      "Slug": "shiradavid-stern"
+    }
+  ],
+  "Address": {
+    "DisplayAddress": true,
+    "UnitNumber": "",
+    "StreetNumber": "20-24",
+    "Address": "Alexandra Street",
+    "Suburb": "Clifton Beach",
+    "State": "QLD",
+    "PostCode": "4879",
+    "Estate": "",
+    "FullAddress": "20-24 Alexandra Street, Clifton Beach QLD, 4879",
+    "MicroAddress": "20-24 Alexandra Street",
+    "HiddenAddress": "Clifton Beach QLD, 4879",
+    "Coordinates": {
+      "Lat": -16.76061,
+      "Lon": 145.6608
+    }
+  },
+  "Price": {
+    "Price": "Contact Agent",
+    "DisplayPrice": true,
+    "BondPrice": "",
+    "NumericPrice": 2500000.0
+  },
+  "Features": {
+    "Bedrooms": 6,
+    "Bathrooms": 7,
+    "Parking": {
+      "Garages": 2,
+      "CarPorts": 2,
+      "OpenSpaces": 7,
+      "CarSpaces": 0,
+      "Total": 11
+    },
+    "Supplementary1": null,
+    "Supplementary2": null,
+    "Area": {
+      "Office": "",
+      "Warehouse": "",
+      "TotalBuilding": "",
+      "Land": "14800",
+      "Other": "",
+      "OtherType": "",
+      "AreaRange": null,
+      "Frontage": "",
+      "DepthLeft": "",
+      "DepthRight": "",
+      "DepthBack": "",
+      "Crossover": ""
+    },
+    "NumberOfLevels": 0,
+    "OtherFeatures": "Area Views, Close to Schools, Close to Shops, Close to Transport, Ocean Views, Pool",
+    "HasGreyWaterSystem": false,
+    "HasSolarHotWater": false,
+    "HasSolarPanels": false,
+    "HasWaterTank": false,
+    "HasAirConditioning": true,
+    "HasDuctedCooling": false,
+    "HasDuctedHeating": false,
+    "HasEvaporativeCooling": false,
+    "HasGasHeating": false,
+    "HasHydronicHeating": false,
+    "HasOpenFirePlace": false,
+    "HasReverseCycleAirCon": false,
+    "HasSplitSystemAirCon": false,
+    "HasSplitSystemHeating": false,
+    "HasAlarmSystem": false,
+    "HasBroadband": false,
+    "HasBuiltInRobes": true,
+    "HasDishwasher": false,
+    "HasVacuumSystem": false,
+    "HasFloorboards": false,
+    "HasGym": false,
+    "HasInsideSpa": false,
+    "HasIntercom": false,
+    "HasPayTV": false,
+    "HasRumpusRoom": false,
+    "HasStudy": false,
+    "HasWorkshop": false,
+    "HasBalcony": false,
+    "HasCourtyard": false,
+    "HasDeck": false,
+    "HasFullyFenced": false,
+    "HasOutsideSpa": false,
+    "HasRemoteGarage": false,
+    "HasSecureParking": false,
+    "HasShed": false,
+    "HasPoolAboveGround": false,
+    "HasPoolInGround": false,
+    "HasTennisCourt": false,
+    "HasOutDoorEntertainment": false,
+    "IsPetFriendly": false,
+    "IsFurnished": false,
+    "FeatureList": [
+      "Air Conditioning",
+      "Built-In Robes"
+    ]
+  },
+  "InspectionTimes": [],
+  "WholeOrPart": "",
+  "Tenancy": "",
+  "WaterRates": "",
+  "CouncilRates": "",
+  "Header": "The One.",
+  "Introduction": "Immersed in privacy in exclusive Clifton Beach on the foothills of McAlister Range, this masterfully designed six a....",
+  "WebDescription": "Immersed in privacy in exclusive Clifton Beach on the foothills of McAlister Range, this masterfully designed six all ensuite bedrooms residence set in stunning tropical surrounds offers the Finest in Far North Queensland living with sophisticated elegance.\nSweeping Ocean vistas of Double, Green and Fitzroy Islands are seen from every room and act as the major source of this home's design inspiration. The pinnacle is the Nautilus shaped Award-Winning Infinity Magna pool and spa. This pool is kept at an ideal temperature all year round and has poolside bathroom.\nIlluminated by natural light and surrounded by manicured tropical gardens designed by renowned Cairns landscape architect Andrew Prowse. Driving up the 1.48 hectares block is an experience that takes you from the ordinary to the extraordinary. The interiors have been executed to perfection with the attention to detail and quality of the finishes embracing a timeless aesthetic and functionality.\nVast open plan living perfectly complements the size of this home with seamless flow through bi-fold doors to the Kwila timber deck. The New Guinea Rosewood and granite Chef's kitchen, bar and butler's pantry are designed for entertaining with Miele appliances, double ovens and gas cooking.\nThe journey of the house begins in the top deck with ample parking for all occasions. Just below is the newest wing, completed in 2017 it has two fully tiled suits, and a store room.\nThe main living floor includes the master residence with its own private indoor and outdoor deck living areas, spacious office, king size bedroom, walk-in-robe and bathroom with stone bench double vanity and waterfall shower. Three further double queen bedrooms are well appointed with high pitched ceilings and ensuites with step in cascade showers.\n At the entrance of the property is a flat parcel of land with a 260m2 villa with garage, water pump room and storage. This building is ideal as a shed or workshop.\nComprehensive appointments include:\n Laundry room\n Pool pump room",
+  "Slug": "176306-20-24-Alexandra-Street",
+  "ExternalLinks": [],
+  "EmbeddedContent": [],
+  "Files": [
+    {
+      "Type": 2,
+      "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/c59d4ee5-d804-42db-b3c3-aa060c279a6a.jpg",
+      "Label": "Floorplan 1"
+    },
+    {
+      "Type": 2,
+      "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/8767ed5a-3657-46bc-a0ad-e7f9fcb08a90.jpg",
+      "Label": "Floorplan 2"
+    }
+  ],
+  "Images": [
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/9a009bfb-e1ce-48c0-b28f-56f476b52d8b.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/9a009bfb-e1ce-48c0-b28f-56f476b52d8b.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/9a009bfb-e1ce-48c0-b28f-56f476b52d8b.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/4dc2ae24-c14a-4055-956c-55a67c8add3d.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/4dc2ae24-c14a-4055-956c-55a67c8add3d.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/4dc2ae24-c14a-4055-956c-55a67c8add3d.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/76ee9e61-f83c-4b6b-9816-2ca3bb47b9ee.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/76ee9e61-f83c-4b6b-9816-2ca3bb47b9ee.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/76ee9e61-f83c-4b6b-9816-2ca3bb47b9ee.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/9f11ae67-9310-4cae-80bf-5731132a4ac4.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/9f11ae67-9310-4cae-80bf-5731132a4ac4.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/9f11ae67-9310-4cae-80bf-5731132a4ac4.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/0dfa161b-28b3-49c5-8e01-e3f81a7b1fbb.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/0dfa161b-28b3-49c5-8e01-e3f81a7b1fbb.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/0dfa161b-28b3-49c5-8e01-e3f81a7b1fbb.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/97e1af7b-f958-4d67-846d-f6f8d07a00a8.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/97e1af7b-f958-4d67-846d-f6f8d07a00a8.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/97e1af7b-f958-4d67-846d-f6f8d07a00a8.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/074cc52d-74a6-4ff1-92b5-61044a771a35.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/074cc52d-74a6-4ff1-92b5-61044a771a35.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/074cc52d-74a6-4ff1-92b5-61044a771a35.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/5c1c87e4-10a8-4482-bfbe-c8d3145a1b7a.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/5c1c87e4-10a8-4482-bfbe-c8d3145a1b7a.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/5c1c87e4-10a8-4482-bfbe-c8d3145a1b7a.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/a6ea0fb6-5c98-41d8-bb04-3740fa2abe23.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/a6ea0fb6-5c98-41d8-bb04-3740fa2abe23.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/a6ea0fb6-5c98-41d8-bb04-3740fa2abe23.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/f4c18eed-5a49-4383-94d9-f025458d04a8.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/f4c18eed-5a49-4383-94d9-f025458d04a8.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/f4c18eed-5a49-4383-94d9-f025458d04a8.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/d5ce1f5d-6139-443e-a876-5200cd97fe1f.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/d5ce1f5d-6139-443e-a876-5200cd97fe1f.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/d5ce1f5d-6139-443e-a876-5200cd97fe1f.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/97f51153-6cea-4041-b516-db0cec0760f0.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/97f51153-6cea-4041-b516-db0cec0760f0.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/97f51153-6cea-4041-b516-db0cec0760f0.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/5c8952c9-acd2-4d82-a740-c1bfebb4373c.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/5c8952c9-acd2-4d82-a740-c1bfebb4373c.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/5c8952c9-acd2-4d82-a740-c1bfebb4373c.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/b62bf296-63aa-4251-8c8f-7bd6599f27c6.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/b62bf296-63aa-4251-8c8f-7bd6599f27c6.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/b62bf296-63aa-4251-8c8f-7bd6599f27c6.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/b9b2d30c-a0ab-4014-bd0d-7e12c580ec80.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/b9b2d30c-a0ab-4014-bd0d-7e12c580ec80.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/b9b2d30c-a0ab-4014-bd0d-7e12c580ec80.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/169ee651-d537-44d6-9128-2d4e7da1c242.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/169ee651-d537-44d6-9128-2d4e7da1c242.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/169ee651-d537-44d6-9128-2d4e7da1c242.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/36abdf4e-1834-4110-a60b-993227d670f7.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/36abdf4e-1834-4110-a60b-993227d670f7.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/36abdf4e-1834-4110-a60b-993227d670f7.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/63b240da-8ec6-414c-937a-0eef6df9b5cb.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/63b240da-8ec6-414c-937a-0eef6df9b5cb.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/63b240da-8ec6-414c-937a-0eef6df9b5cb.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/e7a32faa-02a2-4bf8-81c4-baf25cbe48ea.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/e7a32faa-02a2-4bf8-81c4-baf25cbe48ea.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/e7a32faa-02a2-4bf8-81c4-baf25cbe48ea.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/e856eaa6-63ae-42ec-b40c-5361a2a118a7.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/e856eaa6-63ae-42ec-b40c-5361a2a118a7.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/e856eaa6-63ae-42ec-b40c-5361a2a118a7.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/82234515-6cd9-46b0-97aa-94d75cb59e0a.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/82234515-6cd9-46b0-97aa-94d75cb59e0a.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/82234515-6cd9-46b0-97aa-94d75cb59e0a.jpg"
+      }
+    },
+    {
+      "Thumbs": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Thumbs/53a6d4d2-2b97-4351-94ae-83060209ab19.jpg"
+      },
+      "Preview": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Preview/53a6d4d2-2b97-4351-94ae-83060209ab19.jpg"
+      },
+      "Large": {
+        "Url": "https://images.prolist.net.au/PhotoLibrary/Twomey_Schriber_Property_Group/Cairns_City/ShiraDavidStern/Large/53a6d4d2-2b97-4351-94ae-83060209ab19.jpg"
+      }
+    }
+  ],
+  "DateAvailable": null,
+  "IsHighlightListing": false,
+  "BulletPoints": [],
+  "HtmlWebDescription": "Immersed in privacy in exclusive Clifton Beach on the foothills of McAlister Range, this masterfully designed six all ensuite bedrooms residence set in stunning tropical surrounds offers the Finest in Far North Queensland living with sophisticated elegance.<br/>Sweeping Ocean vistas of Double, Green and Fitzroy Islands are seen from every room and act as the major source of this home's design inspiration. The pinnacle is the Nautilus shaped Award-Winning Infinity Magna pool and spa. This pool is kept at an ideal temperature all year round and has poolside bathroom.<br/>Illuminated by natural light and surrounded by manicured tropical gardens designed by renowned Cairns landscape architect Andrew Prowse. Driving up the 1.48 hectares block is an experience that takes you from the ordinary to the extraordinary. The interiors have been executed to perfection with the attention to detail and quality of the finishes embracing a timeless aesthetic and functionality.<br/>Vast open plan living perfectly complements the size of this home with seamless flow through bi-fold doors to the Kwila timber deck. The New Guinea Rosewood and granite Chef's kitchen, bar and butler's pantry are designed for entertaining with Miele appliances, double ovens and gas cooking.<br/>The journey of the house begins in the top deck with ample parking for all occasions. Just below is the newest wing, completed in 2017 it has two fully tiled suits, and a store room.<br/>The main living floor includes the master residence with its own private indoor and outdoor deck living areas, spacious office, king size bedroom, walk-in-robe and bathroom with stone bench double vanity and waterfall shower. Three further double queen bedrooms are well appointed with high pitched ceilings and ensuites with step in cascade showers.<br/> At the entrance of the property is a flat parcel of land with a 260m2 villa with garage, water pump room and storage. This building is ideal as a shed or workshop.<br/>Comprehensive appointments include:<br/> Laundry room<br/> Pool pump room"
+}
