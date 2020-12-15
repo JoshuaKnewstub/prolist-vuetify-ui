@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import OpenHomes from 'C:/Users/PROLIST/Desktop/Prolist Test/prolist-vuetify-ui/src/components/OpenHomes.vue';
+import OpenHomes from './components/OpenHomes.vue';
 import NavBar from './components/layout/NavBar.vue'
 import Listing from './components/listings/Listing.vue'
 
