@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <v-main>
-      <router-view></router-view>
       <NavBar/>
       <OpenHomes/>
       <Listings/>
@@ -13,7 +12,6 @@
 import OpenHomes from './components/OpenHomes';
 import NavBar from './components/layout/NavBar'
 import Listings from './components/listings/Listings'
-
 
 export default {
   name: 'App',
