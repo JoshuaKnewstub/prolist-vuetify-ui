@@ -33,26 +33,33 @@
     <v-navigation-drawer app v-model="drawer">
       <v-list nav dense>
         <v-list-item-group v-model="group">
+          <router-link to="/OpenHomes">
           <v-list-item>
             <v-list-item-icon
               ><v-icon>mdi-36px mdi-home-group</v-icon></v-list-item-icon
             >
             <v-list-item-title>Open Houses</v-list-item-title>
           </v-list-item>
+          </router-link>
 
+
+<router-link to="/favourites">
           <v-list-item>
             <v-list-item-icon
               ><v-icon>mdi-36px mdi-home-heart</v-icon></v-list-item-icon
             >
             <v-list-item-title>Favourites</v-list-item-title>
           </v-list-item>
+          </router-link>
 
+<router-link to="/visited">
           <v-list-item>
             <v-list-item-icon
               ><v-icon>mdi-36px mdi-home-map-marker</v-icon></v-list-item-icon
             >
             <v-list-item-title>Visited</v-list-item-title>
           </v-list-item>
+          </router-link>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>

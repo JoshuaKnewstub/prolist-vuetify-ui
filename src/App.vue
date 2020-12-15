@@ -4,15 +4,15 @@
       <router-view></router-view>
       <NavBar/>
       <OpenHomes/>
-      <Listings/>
+      <Listing/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import OpenHomes from './components/OpenHomes';
-import NavBar from './components/layout/NavBar'
-import Listings from './components/listings/Listings'
+import OpenHomes from 'C:/Users/PROLIST/Desktop/Prolist Test/prolist-vuetify-ui/src/components/OpenHomes.vue';
+import NavBar from './components/layout/NavBar.vue'
+import Listing from './components/listings/Listing.vue'
 
 
 export default {
@@ -21,7 +21,7 @@ export default {
   components: {
     OpenHomes,
     NavBar,
-    Listings
+    Listing
   },
 
   data: () => ({
