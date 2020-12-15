@@ -1,18 +1,18 @@
 <template>
   <v-app>
     <v-main>
-      <router-view></router-view>
       <NavBar/>
       <OpenHomes/>
-      <Listing/>
+      <ListingPreview/>
     </v-main>
   </v-app>
 </template>
 
 <script>
 import OpenHomes from './components/OpenHomes.vue';
-import NavBar from   './components/layout/NavBar.vue'
-import Listing from './components/listings/Listing.vue'
+import NavBar from  './components/layout/NavBar.vue'
+import ListingPreview from './components/ListingPreview.vue'
+
 
 export default {
   name: 'App',
@@ -20,7 +20,7 @@ export default {
   components: {
     OpenHomes,
     NavBar,
-    Listing
+    ListingPreview,
   },
 
   data: () => ({

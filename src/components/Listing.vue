@@ -29,7 +29,6 @@ export default {
     fetch(request).then((response) => response.json()).then(listing => {
       console.log(listing)
       this.response = listing
-      
     });
   },
 

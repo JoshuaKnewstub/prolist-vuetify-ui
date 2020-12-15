@@ -7,32 +7,28 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
 
+      <v-text-field
+        class="searchBar"
+        v-model="search"
+        placeholder="Search..."
+        clearable
+        solo
+        single-line
+        prepend-inner-icon="mdi-magnify"
+      ></v-text-field>
 
-
-            <v-text-field
-              class="searchBar"
-              v-model="search"
-              placeholder="Search..."
-              clearable
-              solo
-              single-line
-              prepend-inner-icon="mdi-magnify"
-            ></v-text-field>
-
-
-            <v-select
-              class="select"
-              v-model="selectSortBy"
-              :items="sortBy"
-              label="Sort By"
-              append-icon="mdi-sort"
-              outlined
-              hide-selected
-              dense
-              hide-details
-              autowidth
-            ></v-select>
-
+      <v-select
+        class="select"
+        v-model="selectSortBy"
+        :items="sortBy"
+        label="Sort By"
+        append-icon="mdi-sort"
+        outlined
+        hide-selected
+        dense
+        hide-details
+        autowidth
+      ></v-select>
     </v-toolbar>
 
     <v-navigation-drawer app v-model="drawer">
@@ -86,7 +82,6 @@ export default {
 <style scoped>
 .select {
   max-width: 180px;
-
 }
 .searchBar {
   max-width: 300px;
