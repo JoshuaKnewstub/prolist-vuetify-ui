@@ -1,19 +1,18 @@
 <template>
-    <div id="listing">
-        <ul>
-            <li v-for="data in propertyData" :key="data.id">
-                {{data.PropertyType}}
-            </li>
-        </ul>
-    </div>
+  <div id="listing">
+    {{ data }}
+  </div>
 </template>
 
 <script>
-
 export default {
   data() {
-    return {
-    };
+    return {};
+  },
+  mounted() {
+    axios
+      .get("https://api.coindesk.com/v1/bpi/currentprice.json")
+      .then((response) => (this.data = response));
   },
 };
 </script>
