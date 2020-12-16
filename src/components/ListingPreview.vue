@@ -1,8 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
 <template>
   <div class="listingPreview">
     <v-layout row wrap>
-      <v-card class="mx-auto ma-2" max-width="344">
-        <v-img height="200px" :src="(response.Images[0].Preview.Url)"></v-img>
+      <v-card class="mx-auto ma-2" max-width="344" v-if="response">
+        <v-img height="200px" :src="response.Images[0].Preview.Url"></v-img>
+
         <v-fab-transition>
           <v-btn
             @click="toggleButton"
@@ -50,6 +62,7 @@ export default {
     show: false,
     clicked: false,
     favouriteToggle: "mdi-36px mdi-star",
+    response: null,
   }),
   methods: {
     toggleButton() {
