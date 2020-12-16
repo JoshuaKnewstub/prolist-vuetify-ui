@@ -9,7 +9,7 @@
 
 <script>
 import ListingPreview from './ListingPreview.vue'
-import NavBarOpenHomes from 'C:/Users/PROLIST/Desktop/Bluetooth App/prolist-vuetify-ui/src/components/layout/NavBarOpenHomes.vue'
+import NavBarOpenHomes from './layout/NavBarOpenHomes.vue'
 
 export default {
   name: "openHomes",

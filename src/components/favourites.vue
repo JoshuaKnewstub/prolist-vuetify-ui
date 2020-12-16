@@ -4,7 +4,7 @@
 
 <script>
 
-import NavBarFavourites from 'C:/Users/PROLIST/Desktop/Bluetooth App/prolist-vuetify-ui/src/components/layout/NavBarFavourites.vue'
+import NavBarFavourites from './layout/NavBarFavourites.vue'
 
   export default {
     name: 'favourites',
