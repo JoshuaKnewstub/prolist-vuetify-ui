@@ -2,7 +2,9 @@
   <div class="listingPreview">
     <v-layout row wrap>
       <v-card class="mx-auto ma-2" max-width="344">
-        <v-img height="200px" :src="(response.Images[0].Preview.Url)">Placeholder</v-img>
+        <v-img height="200px" src="https:images.prolist.net.au/PhotoLibrary/Demo_Franchise/Demo_Showcase/DemoKimberly/Preview/12f08e04-6d36-4256-8f2f-d46574ce58ac.jpg"></v-img>
+        <!-- response.Image[0].Preview.Url -->
+         <!-- "https://images.prolist.net.au/PhotoLibrary/Demo_Franchise/Demo_Showcase/DemoKimberly/Preview/12f08e04-6d36-4256-8f2f-d46574ce58ac.jpg" -->
         <v-fab-transition>
           <v-btn
             @click="toggleButton"
@@ -44,7 +46,6 @@
 export default {
   name: "openhomes",
   response: null,
-
 
   data: () => ({
     show: false,
