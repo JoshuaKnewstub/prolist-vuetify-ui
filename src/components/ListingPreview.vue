@@ -2,7 +2,7 @@
   <div class="listingPreview">
     <v-layout row wrap>
       <v-card class="mx-auto ma-2" max-width="344">
-        <v-img height="200px" :src="(response.Images[0].Preview.Url)">Placeholder</v-img>
+        <v-img height="200px" :src="(response.Images[0].Preview.Url)"></v-img>
         <v-fab-transition>
           <v-btn
             @click="toggleButton"
