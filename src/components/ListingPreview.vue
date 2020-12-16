@@ -1,43 +1,45 @@
 <template>
   <div class="listingPreview">
-    <v-layout row wrap>
-      <v-card class="mx-auto ma-2" max-width="344" v-if="response">
-        <v-img height="200px" :src="listing.Images[0].Preview.Url"></v-img>
+    <v-container grid-list-sm>
+      <v-layout row wrap>
+        <v-card id="listingCard" class="ma-2" max-width="344" v-if="response">
+          <v-img height="200px" :src="listing.Images[0].Preview.Url"></v-img>
 
-        <v-fab-transition>
-          <v-btn
-            @click="toggleButton"
-            color="white"
-            dark
-            absolute
-            top
-            right
-            fab
-          >
-            <v-icon id="favouriteToggle" color="blue"></v-icon>
-          </v-btn>
-        </v-fab-transition>
-        <v-card-title class="address">
-         {{ listing.Address.MicroAddress }}
-        </v-card-title>
+          <v-fab-transition>
+            <v-btn
+              @click="toggleButton"
+              color="white"
+              dark
+              absolute
+              top
+              right
+              fab
+            >
+              <v-icon id="favouriteToggle" color="blue"></v-icon>
+            </v-btn>
+          </v-fab-transition>
+          <v-card-title class="address">
+          {{ listing.Address.MicroAddress }}
+          </v-card-title>
 
-        <v-card-subtitle class="suburb"> {{ listing.Address.HiddenAddress }} </v-card-subtitle>
+          <v-card-subtitle class="suburb"> {{ listing.Address.HiddenAddress }} </v-card-subtitle>
 
-        <v-card-title class="pricing"> {{ listing.Price.Price }} </v-card-title>
-        <v-card-actions>
-          <v-btn color="blue lighten-2" text> Explore </v-btn>
-          <v-spacer></v-spacer>
-          <v-card-text> {{ listing.Features.Bedrooms }}</v-card-text>
-          <v-icon>mdi-36px mdi-bed</v-icon>
-          <v-spacer></v-spacer>
-          <v-card-text>{{ listing.Features.Bathrooms }}</v-card-text>
-          <v-icon>mdi-36px mdi-shower</v-icon>
-          <v-spacer></v-spacer>
-          <v-card-text>{{ listing.Features.Parking.Total }}</v-card-text>
-          <v-icon>mdi-36px mdi-car</v-icon>
-        </v-card-actions>
-      </v-card>
-    </v-layout>
+          <v-card-title class="pricing"> {{ listing.Price.Price }} </v-card-title>
+          <v-card-actions>
+            <v-btn color="blue lighten-2" text> Explore </v-btn>
+            <v-spacer></v-spacer>
+            <v-card-text> {{ listing.Features.Bedrooms }}</v-card-text>
+            <v-icon>mdi-36px mdi-bed</v-icon>
+            <v-spacer></v-spacer>
+            <v-card-text>{{ listing.Features.Bathrooms }}</v-card-text>
+            <v-icon>mdi-36px mdi-shower</v-icon>
+            <v-spacer></v-spacer>
+            <v-card-text>{{ listing.Features.Parking.Total }}</v-card-text>
+            <v-icon>mdi-36px mdi-car</v-icon>
+          </v-card-actions>
+        </v-card>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 

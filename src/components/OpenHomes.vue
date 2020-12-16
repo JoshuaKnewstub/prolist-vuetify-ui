@@ -15,9 +15,11 @@
     <div v-if="response">
       <div v-for="openingDates in response.Days" :key="openingDates.Date.Value">
         <h1 class = "date">{{ `${openingDates.Date.DayName.ShortName} ${openingDates.Date.DayOfMonth} ${openingDates.Date.MonthName.ShortName}` }}</h1>
-        <div v-for="listing in openingDates.Listings" :key="listing.Id">
-          <ListingPreview :listing="listing" />
-        </div>
+        <v-layout wrap row>
+          <div v-for="listing in openingDates.Listings" :key="listing.Id">
+            <ListingPreview :listing="listing" />
+          </div>
+        </v-layout>
       </div>
     </div>
   </div>
