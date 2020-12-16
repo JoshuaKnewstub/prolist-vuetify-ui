@@ -2,7 +2,7 @@
   <div class="listingPreview">
     <v-layout row wrap>
       <v-card class="mx-auto ma-2" max-width="344" v-if="response">
-        <v-img height="200px" :src="response.Images[0].Preview.Url"></v-img>
+        <v-img height="200px" :src="listing.Images[0].Preview.Url"></v-img>
 
         <v-fab-transition>
           <v-btn
@@ -18,22 +18,22 @@
           </v-btn>
         </v-fab-transition>
         <v-card-title class="address">
-         {{response.Address.MicroAddress}}
+         {{ listing.Address.MicroAddress }}
         </v-card-title>
 
-        <v-card-subtitle class="suburb"> {{response.Address.HiddenAddress}} </v-card-subtitle>
+        <v-card-subtitle class="suburb"> {{ listing.Address.HiddenAddress }} </v-card-subtitle>
 
-        <v-card-title class="pricing"> {{response.Price.Price}} </v-card-title>
+        <v-card-title class="pricing"> {{ listing.Price.Price }} </v-card-title>
         <v-card-actions>
           <v-btn color="blue lighten-2" text> Explore </v-btn>
           <v-spacer></v-spacer>
-          <v-card-text>{{response.Features.Bedrooms}}</v-card-text>
+          <v-card-text> {{ listing.Features.Bedrooms }}</v-card-text>
           <v-icon>mdi-36px mdi-bed</v-icon>
           <v-spacer></v-spacer>
-          <v-card-text>{{response.Features.Bathrooms}}</v-card-text>
+          <v-card-text>{{ listing.Features.Bathrooms }}</v-card-text>
           <v-icon>mdi-36px mdi-shower</v-icon>
           <v-spacer></v-spacer>
-          <v-card-text>{{response.Features.Parking.Total}}</v-card-text>
+          <v-card-text>{{ listing.Features.Parking.Total }}</v-card-text>
           <v-icon>mdi-36px mdi-car</v-icon>
         </v-card-actions>
       </v-card>
@@ -45,6 +45,11 @@
 export default {
   name: "openhomes",
   response: null,
+  props:  
+  {
+      listing: Object,
+
+  },
 
 
   data: () => ({
