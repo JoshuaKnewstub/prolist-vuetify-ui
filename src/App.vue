@@ -1,15 +1,13 @@
 <template>
   <v-app>
     <v-main>
-      <router-view></router-view>
       <NavBar/>
-      <OpenHomes/>
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import OpenHomes from './components/OpenHomes.vue';
 import NavBar from './components/layout/NavBar.vue'
 
 
@@ -17,7 +15,6 @@ export default {
   name: 'App',
 
   components: {
-    OpenHomes,
     NavBar,
   },
   data: () => ({    

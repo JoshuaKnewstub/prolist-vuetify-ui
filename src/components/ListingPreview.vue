@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 <template>
   <div class="listingPreview">
     <v-layout row wrap>
