@@ -1,17 +1,6 @@
-
-
-
-
-
-
-
-
-
-
 <template>
   <div class="openHomes">
     <h1 class="openHomesHeading ma-10">Open Homes</h1>
-
     <div v-if="response">
       <div v-for="openingDates in response.Days" :key="openingDates.Date.Value">
         <h1 class = "date">{{ `${openingDates.Date.DayName.ShortName} ${openingDates.Date.DayOfMonth} ${openingDates.Date.MonthName.ShortName}` }}</h1>

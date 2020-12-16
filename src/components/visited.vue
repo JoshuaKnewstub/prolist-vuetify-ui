@@ -1,16 +1,13 @@
 <template>
-  <NavBarVisited/>
+  <h1>Visited</h1>
 </template>
 
 <script>
 
-import NavBarVisited from './layout/NavBarVisited.vue'
   
   export default {
     name: 'visited',
-
     components: {
-      NavBarVisited,
   },
   data: () => ({    
   }),

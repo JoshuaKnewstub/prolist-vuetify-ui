@@ -1,16 +1,13 @@
 <template>
-  <NavBarFavourites/>
+<h1>Favourites</h1>
 </template>
 
 <script>
-
-import NavBarFavourites from './layout/NavBarFavourites.vue'
 
   export default {
     name: 'favourites',
 
     components: {
-      NavBarFavourites,
   },
   data: () => ({    
   }),
