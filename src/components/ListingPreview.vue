@@ -54,7 +54,7 @@ export default {
   }),
   methods: {
     toggleButton() {
-      this.favouriteToggle = "mdi-36px mdi-car";
+      this.favouriteToggle = "mdi-36px mdi-approval";
     },
   },
 
