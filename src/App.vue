@@ -11,7 +11,7 @@
 <script>
 import OpenHomes from './components/OpenHomes.vue';
 import NavBar from './components/layout/NavBar.vue'
-import Listing from './components/Listing.vue'
+import Listing from './components/listings/Listing.vue'
 
 export default {
   name: 'App',
