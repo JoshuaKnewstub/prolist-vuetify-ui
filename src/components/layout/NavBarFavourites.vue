@@ -34,7 +34,7 @@
     <v-navigation-drawer app v-model="drawer">
       <v-list nav dense>
         <v-list-item-group v-model="group">
-          <router-link to="/">
+          <router-link to="/" >
             <v-list-item>
               <v-list-item-icon
                 ><v-icon>mdi-36px mdi-home-group</v-icon></v-list-item-icon
@@ -87,4 +87,5 @@ export default {
   max-width: 300px;
   height: 100%;
 }
+a {  text-decoration: none;}
 </style>

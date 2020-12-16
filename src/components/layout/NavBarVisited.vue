@@ -87,4 +87,5 @@ export default {
   max-width: 300px;
   height: 100%;
 }
+a {  text-decoration: none;}
 </style>

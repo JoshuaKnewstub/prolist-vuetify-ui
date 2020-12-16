@@ -31,7 +31,7 @@
       ></v-select>
     </v-toolbar>
 
-    <v-navigation-drawer app v-model="drawer">
+    <v-navigation-drawer app v-model="drawer" >
       <v-list nav dense>
         <v-list-item-group v-model="group">
           <router-link to="/">
@@ -87,4 +87,5 @@ export default {
   max-width: 300px;
   height: 100%;
 }
+a {  text-decoration: none;}
 </style>
