@@ -1,7 +1,7 @@
 <template>
   <div class="listingPreview">
-    <v-container grid-list-sm>
-      <v-layout row wrap>
+    <v-container>
+      <v-layout>
         <v-card id="listingCard" class="ma-2" max-width="344" v-if="response">
           <v-img height="200px" :src="listing.Images[0].Preview.Url"></v-img>
 

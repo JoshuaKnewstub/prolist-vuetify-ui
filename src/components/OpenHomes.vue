@@ -3,12 +3,14 @@
     <h1 class="openHomesHeading ma-10">Open Homes</h1>
     <div v-if="response">
       <div v-for="openingDates in response.Days" :key="openingDates.Date.Value">
-        <h1 class = "date">{{ `${openingDates.Date.DayName.ShortName} ${openingDates.Date.DayOfMonth} ${openingDates.Date.MonthName.ShortName}` }}</h1>
-        <v-layout wrap row>
-          <div v-for="listing in openingDates.Listings" :key="listing.Id">
-            <ListingPreview :listing="listing" />
-          </div>
-        </v-layout>
+        <h1 class = "date ma-10">{{ `${openingDates.Date.DayName.ShortName} ${openingDates.Date.DayOfMonth} ${openingDates.Date.MonthName.ShortName}` }}</h1>
+        <v-container grid-list-sm fill-height>
+          <v-layout row wrap justify-center>
+            <div v-for="listing in openingDates.Listings" :key="listing.Id">
+              <ListingPreview :listing="listing" />
+            </div>
+          </v-layout>
+        </v-container>
       </div>
     </div>
   </div>
