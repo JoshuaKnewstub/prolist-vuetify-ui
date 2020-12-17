@@ -8,7 +8,7 @@
       <v-spacer></v-spacer>
 
       <v-text-field
-        class="searchBar"
+        class="searchBar ma-1"
         v-model="search"
         placeholder="Search..."
         clearable
@@ -16,7 +16,6 @@
         single-line
         prepend-inner-icon="mdi-magnify"
       ></v-text-field>
-
       <v-select
         class="select"
         v-model="selectSortBy"
@@ -84,7 +83,7 @@ export default {
 }
 .searchBar {
   max-width: 300px;
-  height: 100%;
+  height: 90%;
 }
 
 a {  text-decoration: none;}
