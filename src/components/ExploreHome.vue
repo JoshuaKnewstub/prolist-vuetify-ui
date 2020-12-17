@@ -103,7 +103,6 @@ export default {
         this.listing = listing;
       });
   },
-    
 }
 
 </script>

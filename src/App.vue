@@ -18,7 +18,11 @@ export default {
   components: {
     NavBar
   },
-  data: () => ({    
+  data: () => ({ 
+       
   }),
+  mounted() {
+
+  }
 };
 </script>
