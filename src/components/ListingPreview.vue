@@ -26,7 +26,7 @@
 
           <v-card-title class="pricing"> {{ listing.Price.Price }}</v-card-title>
           <v-card-actions>
-            <router-link to="/ExploreHomes">
+            <router-link to="/ExploreHome">
               <v-btn color="blue lighten-2" text> Explore </v-btn>
             </router-link>
             <v-spacer></v-spacer>
