@@ -6,7 +6,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+    mounted:function(){
+        console.log(this.$route.params.listingid)
+    }
+
+}
 </script>
 
 <style scoped>

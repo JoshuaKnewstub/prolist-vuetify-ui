@@ -7,5 +7,5 @@ export default [
     {path: '/', component: OpenHomes},
     {path: '/favourites', component: favourites},
     {path: '/visited', component: visited},
-    {path: '/ExploreHome', component: ExploreHome}
+    {path: '/ExploreHome/:listingid', component: ExploreHome}
 ]

@@ -41,7 +41,7 @@
           </div>
 
           <v-card-actions>
-            <router-link to="/ExploreHome">
+            <router-link :to="'/ExploreHome/' +listing.Id">
               <v-btn color="blue lighten-2" text> Explore </v-btn>
             </router-link>
             <v-spacer></v-spacer>
