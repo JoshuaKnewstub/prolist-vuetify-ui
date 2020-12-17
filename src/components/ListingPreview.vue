@@ -33,8 +33,8 @@
             v-for="(inspectionTime, index) in listing.InspectionTimes"
             :key="index">
             <v-card-title
-              class="opening-time"
-              v-if="`${inspectionTime.StartDateInfo.DayOfMonth}${inspectionTime.StartDateInfo.Month}` == date">
+              class="opening-time blue--text"
+              v-if="`${inspectionTime.StartDateInfo.DayOfMonth}${inspectionTime.StartDateInfo.Month}` == date" color="blue lighten-2">
               {{ inspectionTime.StartDateInfo.Time.LongName}} - 
               {{ inspectionTime.EndDateInfo.Time.LongName }}
             </v-card-title>
