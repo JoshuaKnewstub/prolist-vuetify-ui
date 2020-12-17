@@ -25,6 +25,7 @@
                         <v-card-subtitle id="suburb" align="center">
                             {{ listing.Address.HiddenAddress }}
                         </v-card-subtitle>
+                        <h1 v-if="listing" align="center"  class="pricing"> {{ listing.Price.Price }}</h1>
                     </v-col>
                     <v-col cols="2" >
                         <v-icon>mdi-36px mdi-bed</v-icon>
@@ -39,11 +40,25 @@
                         <v-card-text> {{ listing.Features.Parking.Total }}</v-card-text>
                     </v-col>
                 </v-row>
+                <v-divider></v-divider>
+                <v-row>
+                    <v-col>
+                        <h1 class="pa-2" id="descriptionHeading">Description</h1>
+                        <h2 class="pa-2"> {{ listing.Header }}</h2>
+                        <v-card-text class="pa-2"> {{listing.HtmlWebDescription}} </v-card-text>
+                    </v-col>
+                </v-row>
+                <v-divider></v-divider>
+                <v-row>
+                    <v-col>
+                        <h1 class="pa-2" id="featuresHeading">Features</h1>
+                    </v-col>
+                </v-row>
                 </v-card>
             </v-col>
             <v-col cols="4">
                 <v-card
-                class="pa-2"
+                class="pa-4"
                 outlined
                 tile
                 >
@@ -100,5 +115,8 @@ export default {
     #agentName {
         font-size: 150%;
         color: black;
+    }
+    #price {
+        width: fit-content;
     }
 </style>
