@@ -6,7 +6,7 @@
           <v-img height="200px" :src="listing.Images[0].Preview.Url"></v-img>
           <v-fab-transition>
             <v-btn
-              @click="toggleButton"
+              @click="favourite = !favourite"
               color="white"
               dark
               absolute
@@ -14,7 +14,8 @@
               right
               fab
             >
-              <v-icon id="favouriteToggle" color="blue"></v-icon>
+              <v-icon id="favouriteToggle" color="blue" v-if="favourite">mdi-36px mdi-heart</v-icon>
+              <v-icon id="favouriteToggle" color="blue" v-else>mdi-36px mdi-heart-outline</v-icon>
             </v-btn>
           </v-fab-transition>
           <v-card-title class="address">
@@ -74,7 +75,9 @@ export default {
     clicked: false,
     favouriteToggle: "mdi-36px mdi-star",
     response: null,
+    favourite: false,
   }),
+  
   methods: {
     toggleButton() {
       this.favouriteToggle = "mdi-36px mdi-approval";
