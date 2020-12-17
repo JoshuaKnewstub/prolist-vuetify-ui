@@ -45,13 +45,28 @@
                     <v-col>
                         <h1 class="pa-2" id="descriptionHeading">Description</h1>
                         <h2 class="pa-2"> {{ listing.Header }}</h2>
-                        <v-card-text class="pa-2"> {{listing.HtmlWebDescription}} </v-card-text>
+                        <v-card-text class="pa-2" v-html="listing.HtmlWebDescription"></v-card-text>
                     </v-col>
                 </v-row>
                 <v-divider></v-divider>
                 <v-row>
                     <v-col>
                         <h1 class="pa-2" id="featuresHeading">Features</h1>
+                        <v-list disabled>
+                            <v-list-item-group
+                            v-model="selectedItem"
+                            color="primary"
+                            >
+                        <v-list-item
+                        v-for="(feature, i) in listing.Features.FeatureList"
+                        :key="i"
+                        >
+                        <v-list-item-content>
+                            <v-list-item-title v-text="feature"></v-list-item-title>
+                        </v-list-item-content>
+                        </v-list-item>
+                        </v-list-item-group>
+                    </v-list>
                     </v-col>
                 </v-row>
                 </v-card>
