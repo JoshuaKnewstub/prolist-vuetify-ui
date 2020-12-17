@@ -6,7 +6,7 @@
         <h1 class = "date">{{ `${openingDates.Date.DayName.ShortName} ${openingDates.Date.DayOfMonth} ${openingDates.Date.MonthName.ShortName}` }}</h1>
         <v-layout wrap row>
           <div v-for="listing in openingDates.Listings" :key="listing.Id">
-            <ListingPreview :listing="listing" />
+            <ListingPreview :listing="listing" :date="`${openingDates.Date.DayOfMonth}${openingDates.Date.Month}`" />
           </div>
         </v-layout>
       </div>

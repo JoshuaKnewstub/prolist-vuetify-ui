@@ -4,7 +4,6 @@
       <v-layout row wrap>
         <v-card id="listingCard" class="ma-2" max-width="344" v-if="response">
           <v-img height="200px" :src="listing.Images[0].Preview.Url"></v-img>
-
           <v-fab-transition>
             <v-btn
               @click="toggleButton"
@@ -19,12 +18,28 @@
             </v-btn>
           </v-fab-transition>
           <v-card-title class="address">
-          {{ listing.Address.MicroAddress }}
+            {{ listing.Address.MicroAddress }}
           </v-card-title>
 
-          <v-card-subtitle class="suburb"> {{ listing.Address.HiddenAddress }} </v-card-subtitle>
+          <v-card-subtitle class="suburb">
+            {{ listing.Address.HiddenAddress }}
+          </v-card-subtitle>
 
-          <v-card-title class="pricing"> {{ listing.Price.Price }} </v-card-title>
+          <v-card-title class="pricing">
+            {{ listing.Price.Price }}
+          </v-card-title>
+
+          <div
+            v-for="(inspectionTime, index) in listing.InspectionTimes"
+            :key="index">
+            <v-card-title
+              class="opening-time"
+              v-if="`${inspectionTime.StartDateInfo.DayOfMonth}${inspectionTime.StartDateInfo.Month}` == date">
+              {{ inspectionTime.StartDateInfo.Time.LongName}} - 
+              {{ inspectionTime.EndDateInfo.Time.LongName }}
+            </v-card-title>
+          </div>
+
           <v-card-actions>
             <v-btn color="blue lighten-2" text> Explore </v-btn>
             <v-spacer></v-spacer>
@@ -47,12 +62,10 @@
 export default {
   name: "openhomes",
   response: null,
-  props:  
-  {
-      listing: Object,
-
+  props: {
+    listing: Object,
+    date: String,
   },
-
 
   data: () => ({
     show: false,
@@ -68,8 +81,14 @@ export default {
 
   mounted() {
     const headers = new Headers();
-    headers.append("x-prolist-client-website-id", "1e4f890d-6112-45fe-ba82-c67bc30116a1");
-    headers.append("x-prolist-website-id", "f94cda42-f8b6-48e3-850a-aef60b3cfc96");
+    headers.append(
+      "x-prolist-client-website-id",
+      "1e4f890d-6112-45fe-ba82-c67bc30116a1"
+    );
+    headers.append(
+      "x-prolist-website-id",
+      "f94cda42-f8b6-48e3-850a-aef60b3cfc96"
+    );
     headers.append("x-prolist-website-level", "3");
 
     const request = new Request(
@@ -81,8 +100,8 @@ export default {
       }
     );
     fetch(request)
-    .then((response) => response.json())
-    .then((listing) => {
+      .then((response) => response.json())
+      .then((listing) => {
         console.log(listing);
         this.response = listing;
       });
