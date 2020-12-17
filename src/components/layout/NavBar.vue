@@ -14,6 +14,7 @@
         clearable
         solo
         single-line
+        dense
         prepend-inner-icon="mdi-magnify"
       ></v-text-field>
       <v-select
@@ -83,7 +84,7 @@ export default {
 }
 .searchBar {
   max-width: 300px;
-  height: 90%;
+  height: 70%;
 }
 
 a {  text-decoration: none;}
