@@ -24,9 +24,11 @@
 
           <v-card-subtitle class="suburb"> {{ listing.Address.HiddenAddress }} </v-card-subtitle>
 
-          <v-card-title class="pricing"> {{ listing.Price.Price }} </v-card-title>
+          <v-card-title class="pricing"> {{ listing.Price.Price }}</v-card-title>
           <v-card-actions>
-            <v-btn color="blue lighten-2" text> Explore </v-btn>
+            <router-link to="/ExploreHomes">
+              <v-btn color="blue lighten-2" text> Explore </v-btn>
+            </router-link>
             <v-spacer></v-spacer>
             <v-card-text> {{ listing.Features.Bedrooms }}</v-card-text>
             <v-icon>mdi-36px mdi-bed</v-icon>
