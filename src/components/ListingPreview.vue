@@ -2,11 +2,11 @@
   <div class="listingPreview">
     <v-container>
       <v-layout>
-        <v-card id="listingCard" class="ma-2" max-width="344" v-if="response">
+        <v-card id="listingCard" class="ma-2" max-width="344" v-if="listing">
           <v-img height="200px" :src="listing.Images[0].Preview.Url"></v-img>
           <v-fab-transition>
             <v-btn
-              @click="favourite = !favourite"
+              @click="onFavouriteClick()" 
               color="white"
               dark
               absolute
@@ -14,8 +14,12 @@
               right
               fab
             >
-              <v-icon id="favouriteToggle" color="blue" v-if="favourite">mdi-36px mdi-heart</v-icon>
-              <v-icon id="favouriteToggle" color="blue" v-else>mdi-36px mdi-heart-outline</v-icon>
+              <v-icon id="favouriteToggle" color="blue" v-if="favourite"
+                >mdi-36px mdi-heart</v-icon
+              >
+              <v-icon id="favouriteToggle" color="blue" v-else
+                >mdi-36px mdi-heart-outline</v-icon
+              >
             </v-btn>
           </v-fab-transition>
           <v-card-title class="address">
@@ -32,17 +36,23 @@
 
           <div
             v-for="(inspectionTime, index) in listing.InspectionTimes"
-            :key="index">
+            :key="index"
+          >
             <v-card-title
               class="opening-time blue--text"
-              v-if="`${inspectionTime.StartDateInfo.DayOfMonth}${inspectionTime.StartDateInfo.Month}` == date" color="blue lighten-2">
-              {{ inspectionTime.StartDateInfo.Time.LongName}} - 
+              v-if="
+                `${inspectionTime.StartDateInfo.DayOfMonth}${inspectionTime.StartDateInfo.Month}` ==
+                date
+              "
+              color="blue lighten-2"
+            >
+              {{ inspectionTime.StartDateInfo.Time.LongName }} -
               {{ inspectionTime.EndDateInfo.Time.LongName }}
             </v-card-title>
           </div>
 
           <v-card-actions>
-            <router-link :to="'/ExploreHome/' +listing.Id">
+            <router-link :to="'/ExploreHome/' + listing.Id">
               <v-btn color="blue lighten-2" text> Explore </v-btn>
             </router-link>
             <v-spacer></v-spacer>
@@ -71,45 +81,32 @@ export default {
   },
 
   data: () => ({
-    show: false,
-    clicked: false,
-    favouriteToggle: "mdi-36px mdi-star",
-    response: null,
     favourite: false,
   }),
-  
+
   methods: {
     toggleButton() {
       this.favouriteToggle = "mdi-36px mdi-approval";
     },
+    onFavouriteClick() {
+        this.favourite = !this.favourite;
+        var favsArray = [];
+        if(localStorage.getItem("favs") != null){
+            favsArray = localStorage.getItem("favs");
+            //I think this is working besides this push throwing errors
+            favsArray.push(this.listing.Id);
+            localStorage.setItem("favs", favsArray)
+            console.log(localStorage.getItem("favs"))
+        } else {
+            console.log("nothing");
+            favsArray = [this.listing.Id]
+            localStorage.setItem("favs", favsArray)
+        }
+    }
   },
 
   mounted() {
-    const headers = new Headers();
-    headers.append(
-      "x-prolist-client-website-id",
-      "1e4f890d-6112-45fe-ba82-c67bc30116a1"
-    );
-    headers.append(
-      "x-prolist-website-id",
-      "f94cda42-f8b6-48e3-850a-aef60b3cfc96"
-    );
-    headers.append("x-prolist-website-level", "3");
-
-    const request = new Request(
-      "https://clientapi.prolist.net.au/api/listings/6b73707d-7703-4003-b2c6-782a1e6d72fc",
-      {
-        headers,
-        mode: "cors",
-        cache: "default",
-      }
-    );
-    fetch(request)
-      .then((response) => response.json())
-      .then((listing) => {
-        console.log(listing);
-        this.response = listing;
-      });
+    
   },
 };
 </script>
