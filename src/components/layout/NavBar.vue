@@ -1,6 +1,6 @@
 <template>
   <nav app>
-    <v-toolbar app>
+    <v-toolbar dark app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase grey--text">
         {{ pageTitle }}
@@ -31,7 +31,7 @@
       ></v-select>
     </v-toolbar>
 
-    <v-navigation-drawer app v-model="drawer">
+    <v-navigation-drawer dark app v-model="drawer">
       <v-list nav dense>
         <v-list-item-group v-model="group">
           <router-link to="/">
