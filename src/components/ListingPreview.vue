@@ -41,7 +41,9 @@
           </div>
 
           <v-card-actions>
-            <v-btn color="blue lighten-2" text> Explore </v-btn>
+            <router-link to="/ExploreHome">
+              <v-btn color="blue lighten-2" text> Explore </v-btn>
+            </router-link>
             <v-spacer></v-spacer>
             <v-card-text> {{ listing.Features.Bedrooms }}</v-card-text>
             <v-icon>mdi-36px mdi-bed</v-icon>
