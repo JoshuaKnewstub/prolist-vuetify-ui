@@ -1,6 +1,16 @@
 <template>
   <div>
-    <h1>Test</h1>
+    <v-carousel>
+        <v-carousel-item
+        v-for="(image, i) in listing.Images"
+        :key="i"
+        :src="image.Preview.Url"
+        contain
+        class="grey darken-4"
+        reverse-transition="fade-transition"
+        transition="fade-transition">
+        </v-carousel-item>
+    </v-carousel>
     <h1 v-if="listing"> {{ listing.Address.MicroAddress }}</h1>
   </div>
 </template>
