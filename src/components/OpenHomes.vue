@@ -3,7 +3,7 @@
     <h1 class="openHomesHeading ma-10">Open Homes</h1>
     <div v-if="response">
       <div v-for="openingDates in response.Days" :key="openingDates.Date.Value">
-        <h1 class = "date">{{ `${openingDates.Date.DayName.ShortName} ${openingDates.Date.DayOfMonth} ${openingDates.Date.MonthName.ShortName}` }}</h1>
+        <h1 class = "date ma-5">{{ `${openingDates.Date.DayName.ShortName} ${openingDates.Date.DayOfMonth} ${openingDates.Date.MonthName.ShortName}` }}</h1>
         <v-container grid-list-sm fill-height>
           <v-layout wrap row justify-center>
             <div v-for="listing in openingDates.Listings" :key="listing.Id">
