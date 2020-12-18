@@ -20,23 +20,32 @@ import ListingPreview from "./ListingPreview.vue"
 export default {
   name: "favourites",
 
-  components: { ListingPreview,},
+  components: { 
+    ListingPreview,
+    },
+
   data: () => ({
-    favsListings: []
+    
   }),
 
+  computed: {
+    favsListings() { 
+      // return this.$store.getters.getFavArray();
+    return this.$store.getters.getFavArray;
+     }
+  },
+
   mounted() {
-     var favsArray = JSON.parse(localStorage.getItem("favs")) || [];
 
     const headers = new Headers();
     headers.append("x-prolist-client-website-id","1e4f890d-6112-45fe-ba82-c67bc30116a1");
     headers.append("x-prolist-website-id","f94cda42-f8b6-48e3-850a-aef60b3cfc96");
     headers.append("x-prolist-website-level", "3");
 
-    for (var i = 0; i < favsArray.length; i++) {
+    for (var i = 0; i < this.favsListings.length; i++) {
 
       const request = new Request(
-      "https://clientapi.prolist.net.au/api/listings/" + favsArray[i],
+      "https://clientapi.prolist.net.au/api/listings/" + this.favsListings[i],
       {
         headers,
         mode: "cors",
