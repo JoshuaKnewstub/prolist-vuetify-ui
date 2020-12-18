@@ -69,6 +69,11 @@
                     </v-list>
                     </v-col>
                 </v-row>
+                <v-row>
+                    <v-col>
+                        <MapBoxMap/>
+                    </v-col>
+                </v-row>
                 </v-card>
             </v-col>
             <v-col cols="4">
@@ -87,8 +92,13 @@
 </template>
 
 <script>
+import MapBoxMap from "./MapBoxMap.vue"
 export default {
     name: "ExploreHomes",
+
+    components: {
+        MapBoxMap
+    },
 
     data: () => ({
         listing: null,
