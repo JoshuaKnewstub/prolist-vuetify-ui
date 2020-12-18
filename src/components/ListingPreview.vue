@@ -6,7 +6,7 @@
           <v-img height="200px" :src="listing.Images[0].Preview.Url"></v-img>
           <v-fab-transition>
             <v-btn
-              @click="onFavouriteClick()" 
+              @click="onFavouriteClick()"
               color="white"
               dark
               absolute
@@ -77,7 +77,10 @@ export default {
   response: null,
   props: {
     listing: Object,
-    date: String,
+    date: {
+      type: String,
+      required: false,
+    },
   },
 
   data: () => ({
@@ -85,29 +88,22 @@ export default {
   }),
 
   methods: {
-    toggleButton() {
-      this.favouriteToggle = "mdi-36px mdi-approval";
-    },
     onFavouriteClick() {
-        this.favourite = !this.favourite;
-        var favsArray = [];
-        if(localStorage.getItem("favs") != null){
-            favsArray = localStorage.getItem("favs");
-            //I think this is working besides this push throwing errors
-            favsArray.push(this.listing.Id);
-            localStorage.setItem("favs", favsArray)
-            console.log(localStorage.getItem("favs"))
-        } else {
-            console.log("nothing");
-            favsArray = [this.listing.Id]
-            localStorage.setItem("favs", favsArray)
-        }
-    }
+      this.favourite = !this.favourite;
+      var favsArray = JSON.parse(localStorage.getItem("favs")) || [];
+
+      if (this.favourite) {
+        favsArray.push(this.listing.Id);
+  
+      } else {
+        const idx = favsArray.findIndex(item => item == this.listing.Id)
+        if(idx != -1) favsArray.splice(idx, 1);
+      }
+      localStorage.setItem("favs", JSON.stringify(favsArray));
+    },
   },
 
-  mounted() {
-    
-  },
+  mounted() {},
 };
 </script>
 
