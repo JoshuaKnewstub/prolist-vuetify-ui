@@ -8,16 +8,18 @@ Vue.use(Vuex);
 //Create store
 export default new Vuex.Store({
     state: {
-        favouritesArray: [],
+        favouritesArray: /*JSON.parse(localStorage.getItem("favs")) || */ [],
     },
     
     mutations: { //Syncronous way to update things in our store
         addFavourite (state, id) {
             state.favouritesArray.push(id);
+            //localStorage.setItem("favs", JSON.stringify(this.favouritesArray));
         },
         removeFavourite (state, id) {
             const i = state.favouritesArray.findIndex(item => item == id);
             if(i != -1) state.favouritesArray.splice(i, 1);
+            //localStorage.setItem("favs", JSON.stringify(this.favouritesArray));
         }
     },
     actions: { //Asyncronous 

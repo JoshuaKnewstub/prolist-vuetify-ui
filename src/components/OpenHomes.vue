@@ -29,7 +29,6 @@ export default {
 
   data: () => ({
     response: null,
-    openHomes: [],
   }),
 
   mounted() {
