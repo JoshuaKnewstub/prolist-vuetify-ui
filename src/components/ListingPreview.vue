@@ -84,26 +84,30 @@ export default {
   },
 
   data: () => ({
-    favourite: false,
+
   }),
+
+  computed: {
+    favourite() {
+      return this.$store.getters.getFavourited(this.listing.Id)
+    }
+
+  },
 
   methods: {
     onFavouriteClick() {
-      this.favourite = !this.favourite;
-      var favsArray = JSON.parse(localStorage.getItem("favs")) || [];
 
       if (this.favourite) {
-        favsArray.push(this.listing.Id);
-  
+        this.$store.commit("removeFavourite", this.listing.Id);
       } else {
-        const idx = favsArray.findIndex(item => item == this.listing.Id)
-        if(idx != -1) favsArray.splice(idx, 1);
+        this.$store.commit("addFavourite", this.listing.Id);
       }
-      localStorage.setItem("favs", JSON.stringify(favsArray));
     },
   },
 
-  mounted() {},
+  mounted() {
+    
+  },
 };
 </script>
 
